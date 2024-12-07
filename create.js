@@ -15,3 +15,7 @@ db.Students.find().limit(1) // this method returns only the first record in the 
 // sorting the data and then returning limited data 
 
 db.Students.find().sort({name:1}).limit(1) // this method returns the first record in the ascending order of the name field
+
+// update method in mongoDb
+ 
+db.Students.updateOne(filter , update) // syntax of updation of the data in database
