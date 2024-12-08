@@ -38,4 +38,6 @@ db.Students.deleteMany({deletedDataSet:{$exists:false}})
 db.Students.find({name:{$ne:"abhi"}})
 // this command finds all the data values where the name is not equal to "abhi" using $ne command. 
 
-// if 
+// if we want to use different operators in the find method we can use the following commands like $gt, $lt, $gte
+
+// $lte, $in, $nin, $mod, $regex, $type, $
