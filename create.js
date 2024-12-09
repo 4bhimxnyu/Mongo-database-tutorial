@@ -59,3 +59,17 @@ db.Students.find({$nor:[{gender:"male"},{age:{$lte:45}}]}) // here we are checki
 
 db.Students.find({age:{$not:{$lte:18}}}) 
 // this operator returns all the value which are not equal to the parameter , here in this case the database of the students have four value , out of which 3 are greater than 18 and 1 is less than 18 , so the output will be 3 value which are greater.
+
+
+// searching one file in dataset of thousands and millions , it takes a lot of time to complete the search , so we have got the concept of indexing data
+
+db.Students.createIndex({name:1}) // here we are indexing our data and increasing time complexity 
+
+db.Students.find({name:"aish"}).explain("executionStats") 
+// this will check all the data set value but will take the index and get the output with better time complexity 
+
+// delete or drop function works like a pop method 
+
+db.Students.drop() // this will delete the student collection
+
+// creating collection
