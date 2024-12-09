@@ -53,3 +53,4 @@ db.Students.find({$or:[{gender:"male"},{age:{$lte:45}}]})// here we are checking
 
 // NOR Condition
 db.Students.find({$nor:[{gender:"male"},{age:{$lte:45}}]}) // here we are checking the conditons and we are divinding the data based on that  **both the conditions should be excluded **
+// the end
