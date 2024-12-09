@@ -1,3 +1,7 @@
+// creating collection
+db.createCollection("name of the collection")
+// show collection - shows the collection
+
 db.collectionname.find() // finds all the documents in a collection
 db.collectionname.find().pretty() // finds all the documents in a collection and prints them in a
 
