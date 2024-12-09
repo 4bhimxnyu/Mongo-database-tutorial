@@ -40,4 +40,9 @@ db.Students.find({name:{$ne:"abhi"}})
 
 // if we want to use different operators in the find method we can use the following commands like $gt, $lt, $gte
 
-// $lte, $in, $nin, $mod, $regex, $type, $
+// $lte, $in, $nin, $mod, $regex, $type, 
+
+// Now we will learn about logical operations
+
+//first is and
+db.Students.find({$and:[{gender:"male"},{age:{$lte:45}}]}) // here we are checking the gender and age of the data and then segregating them all
