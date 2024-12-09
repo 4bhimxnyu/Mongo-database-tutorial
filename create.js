@@ -44,5 +44,8 @@ db.Students.find({name:{$ne:"abhi"}})
 
 // Now we will learn about logical operations
 
-//first is and
+//first is $and operator
 db.Students.find({$and:[{gender:"male"},{age:{$lte:45}}]}) // here we are checking the gender and age of the data and then segregating them all
+
+// this is the demonstration of $or
+db.Students.find({$or:[{gender:"male"},{age:{$lte:45}}]})// here we are checking if one of the following condition is true and then we will give the output
