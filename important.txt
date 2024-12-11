@@ -1,0 +1,7 @@
+show dbs -  shows the databases
+use mydb - selects the database
+
+
+show collections - shows all the collections in one database
+use mydb - selects the database
+
