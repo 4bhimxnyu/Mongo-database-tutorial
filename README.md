@@ -49,7 +49,7 @@ Before starting, ensure you have the following installed:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/mongo-tutorial.git
+   git clone [https://github.com/your-username/mongo-tutorial.git](https://github.com/4bhimxnyu/Mongo-database-tutorial)
    ```
 
 2. Navigate to the repository folder:
